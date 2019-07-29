@@ -20,7 +20,9 @@ app.use(function (req, res, next) {
 	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, content-type, Accept");
 	next();
 });
-
+app.get('/test',(req,res)=>{
+res.send(" this is test api ");
+})
 app.use('/', express.static('public'))
 
 var name;
