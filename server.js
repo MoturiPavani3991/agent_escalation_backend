@@ -21,6 +21,7 @@ app.use(function (req, res, next) {
 	next();
 });
 app.get('/test',(req,res)=>{
+	console.log(" inside test ");
 res.send(" this is test api ");
 })
 app.use('/', express.static('public'))
@@ -90,6 +91,6 @@ function requestFun(dataPost) {
 
 }
 //Port Initialization 
-http.listen(6000, function () {
-	console.log('Application port number 6000');
+http.listen(90, function () {
+	console.log('Application port number 90');
 });
